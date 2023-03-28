@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import orjson
+from pathlib import Path
 from zstandard import ZstdDecompressor
 
 
@@ -40,3 +41,12 @@ class ZSTJSONL:
                 return orjson.loads(self.lines.pop(0))
             else:
                 raise StopIteration()
+
+
+if __name__ == "__main__":
+    data_path = "../data/RC_2011-01.zst"
+    file = ZSTJSONL(data_path)
+    count = 0
+    for i in file:
+        if count > 10000:
+            break
