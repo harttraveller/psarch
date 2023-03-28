@@ -15,7 +15,9 @@ class ZSTIO:
 
     def readlines(self):
         while True:
-            chunk = self.decompressor.read(self.chunk_size).decode()
+            # * ignoring errors seems to fix bug, but may drop bytes, bug:
+            # ! UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf0 in position 1023: unexpected end of data
+            chunk = self.decompressor.read(self.chunk_size).decode(errors="ignore")
             if not chunk:
                 break
             lines = (self.buffer + chunk).split("\n")
