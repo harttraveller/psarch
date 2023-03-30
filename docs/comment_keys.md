@@ -4,7 +4,9 @@ Note that as reddit has evolved, the keys and data values pulled from the site b
 
 Information was partially inferred and partially sourced from the PRAW [comment](https://praw.readthedocs.io/en/stable/code_overview/models/comment.html) documentation.
 
-AP stands for "always present", in reference to the keys respectively. This is judged from the [comments key count sample](#comments-key-count-sample) taken across all comment years.
+[comments key count sample](#drop)
+
+- author_created_utc: the utc unix time the authors account was created
 
 ## `edited`
 
@@ -356,78 +358,82 @@ This field is dropped, it doesn't appear to be useful. And in the samples taken 
 
 
 
+## Complete Data
+
+### Keep
+- subreddit
+- score
+- created_utc
+
+### Transmute
+
+### Drop
+- distinguished
+- subreddit_id
+
+### Add
+- root (root comment)
+
+### Uncertain
+- edited
+- parent_id
+- id
+- author_flair_text
+- author
+- gilded
+- link_id
+- controversiality
+- body
+- author_flair_css_class
+
+## Partial Data
 
 
-
-## Comments Key Count Sample
-
-```json
-{
-    "total": 2054040,
-    "key_counts": {
-        "edited": 2054040,
-        "parent_id": 2054040,
-        "id": 2054040,
-        "author_flair_text": 2054040,
-        "author": 2054040,
-        "retrieved_on": 2004035,
-        "distinguished": 2054040,
-        "gilded": 2054040,
-        "link_id": 2054040,
-        "stickied": 1083943,
-        "subreddit_id": 2054040,
-        "controversiality": 2054040,
-        "body": 2054040,
-        "author_flair_css_class": 2054040,
-        "created_unix": 2054040,
-        "score": 2054040,
-        "ups": 1283963,
-        "subreddit": 2054040,
-        "downs": 930093,
-        "score_hidden": 1220122,
-        "name": 1180118,
-        "archived": 1270151,
-        "all_awardings": 470024,
-        "associated_award": 440044,
-        "author_created_unix": 558439,
-        "author_flair_background_color": 570057,
-        "author_flair_template_id": 590059,
-        "author_flair_text_color": 570057,
-        "author_fullname": 533109,
-        "awarders": 190019,
-        "can_gild": 710071,
-        "can_mod_post": 350035,
-        "collapsed": 580058,
-        "collapsed_reason": 580058,
-        "gildings": 540054,
-        "is_submitter": 670067,
-        "locked": 470024,
-        "no_follow": 600060,
-        "permalink": 650065,
-        "quarantined": 240024,
-        "removal_reason": 483943,
-        "send_replies": 600060,
-        "steward_reports": 49969,
-        "subreddit_name_prefixed": 510051,
-        "subreddit_type": 640064,
-        "total_awards_received": 470024,
-        "author_flair_richtext": 513908,
-        "author_flair_type": 513908,
-        "author_patreon_flair": 477003,
-        "author_cakeday": 2304,
-        "author_premium": 377567,
-        "collapsed_because_crowd_control": 420042,
-        "media_metadata": 463,
-        "collapsed_reason_code": 250025,
-        "comment_type": 320032,
-        "top_awarded_type": 350035,
-        "treatment_tags": 380038,
-        "unrepliable_reason": 200020,
-        "editable": 28,
-        "rte_mode": 10001,
-        "author_is_blocked": 20002,
-        "retrieved_unix": 50005,
-        "approved_at_unix": 10001
-    }
-}
-```
+"retrieved_on": "2004035",
+"stickied": 1083943,
+"ups": 1283963,
+"downs": 930093,
+"score_hidden": 1220122,
+"name": 1180118,
+"archived": 1270151,
+"all_awardings": 470024,
+"associated_award": 440044,
+"author_created_utc": 558439,
+"author_flair_background_color": 570057,
+"author_flair_template_id": 590059,
+"author_flair_text_color": 570057,
+"author_fullname": 533109,
+"awarders": 190019,
+"can_gild": 710071,
+"can_mod_post": 350035,
+"collapsed": 580058,
+"collapsed_reason": 580058,
+"gildings": 540054,
+"is_submitter": 670067,
+"locked": 470024,
+"no_follow": 600060,
+"permalink": 650065,
+"quarantined": 240024,
+"removal_reason": 483943,
+"send_replies": 600060,
+"steward_reports": 49969,
+"subreddit_name_prefixed": 510051,
+"subreddit_type": 640064,
+"total_awards_received": 470024,
+"author_flair_richtext": 513908,
+"author_flair_type": 513908,
+"author_patreon_flair": 477003,
+"author_cakeday": 2304,
+"author_premium": 377567,
+"collapsed_because_crowd_control": 420042,
+"media_metadata": 463,
+"collapsed_reason_code": 250025,
+"comment_type": 320032,
+"top_awarded_type": 350035,
+"treatment_tags": 380038,
+"unrepliable_reason": 200020,
+"editable": 28,
+"rte_mode": 10001,
+"author_is_blocked": 20002,
+"retrieved_unix": 50005,
+"approved_at_unix": 10001

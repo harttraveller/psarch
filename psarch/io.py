@@ -17,7 +17,10 @@ class ZSTJSONL:
 
     def __iter__(self) -> dict:
         while True:
-            yield next(self)
+            try:
+                yield next(self)
+            except StopIteration:
+                break
 
     def __next__(self) -> dict:
         if len(self.lines):
@@ -32,7 +35,7 @@ class ZSTJSONL:
             else:
                 raise StopIteration()
 
-    def process(self, handler: Callable, n: int = None) -> list[Any]:
+    def process(self, handler: Callable = lambda x: x, n: int = None) -> list[Any]:
         data = list()
         count = 0
         for line in tqdm(self):
@@ -43,7 +46,7 @@ class ZSTJSONL:
                     break
         return data
 
-    def ingest(self, handler: Callable, n: int = None) -> None:
+    def ingest(self, handler: Callable = lambda x: x, n: int = None) -> None:
         for line in tqdm(self):
             count = 0
             for line in tqdm(self):
