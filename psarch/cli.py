@@ -6,7 +6,6 @@ import requests
 import subprocess
 from pathlib import Path
 from pyeio import easy
-from urllib.request import urlretrieve
 from psarch.env import CONFIG, ELASTICSEARCH_DOWNLOAD_URLS
 from psarch.web import download_file
 
@@ -14,10 +13,6 @@ from psarch.web import download_file
 def check_config():
     if not CONFIG.exists():
         easy.save({"cache": None}, CONFIG)
-
-
-def make_cache(path: str):
-    pass
 
 
 def download_elasticsearch():
