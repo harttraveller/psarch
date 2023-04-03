@@ -10,11 +10,6 @@ from psarch.env import CONFIG, ELASTICSEARCH_DOWNLOAD_URLS
 from psarch.web import download_file
 
 
-def check_config():
-    if not CONFIG.exists():
-        easy.save({"cache": None}, CONFIG)
-
-
 def download_elasticsearch():
     system = platform.system()
     if system != "Darwin":
