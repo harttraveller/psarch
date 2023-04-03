@@ -1,3 +1,4 @@
+import json
 import atexit
 from pathlib import Path
 from setuptools import setup, find_packages
@@ -7,6 +8,11 @@ from setuptools.command.install import install
 def post_install():
     package_files = Path.home() / ".psarch"
     package_files.mkdir(exist_ok=True)
+    config = package_files / "config.json"
+    if not config.exists():
+        with open(config, "w") as file:
+            file.write(json.dumps({"cache": None}, indent=4))
+        file.close()
 
 
 class Installation(install):
@@ -25,7 +31,7 @@ setup(
     long_description_content_type="text/markdown",
     packages=find_packages(),
     include_package_data=True,
-    install_requires=["msgspec"],
+    install_requires=["pyeio", "click", "elasticsearch", "requests"],
     entry_points={"console_scripts": ["psarch=psarch.cli:entry"]},
     cmdclass={
         "install": Installation,
