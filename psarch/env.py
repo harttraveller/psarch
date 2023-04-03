@@ -1,8 +1,8 @@
 from pathlib import Path
 
 HOME = Path.home()
-CACHE = HOME / ".psarch"
-CONFIG = CACHE / "config.json"
+FILES = HOME / ".psarch"
+CONFIG = FILES / "config.json"
 
 
 ELASTICSEARCH_DOWNLOAD_URLS = {

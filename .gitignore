@@ -3,6 +3,8 @@
 data
 files
 dev
+notes
+config.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
