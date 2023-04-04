@@ -6,7 +6,7 @@ import requests
 import subprocess
 from pathlib import Path
 from pyeio import easy
-from psarch.env import CONFIG, ELASTICSEARCH_DOWNLOAD_URLS
+from psarch.env import CONFIG_PATH, ELASTICSEARCH_DOWNLOAD_URLS
 from psarch.web import download_file
 
 
@@ -14,7 +14,7 @@ def download_elasticsearch():
     system = platform.system()
     if system != "Darwin":
         raise Exception("Currently only supports MacOS")
-    cache = Path(easy.load(CONFIG)["cache"])
+    cache = Path(easy.load(CONFIG_PATH)["cache"])
     if cache is None:
         raise Exception("Cache directory not set")
     if not Path(cache).exists():
@@ -37,22 +37,9 @@ def download_elasticsearch():
             raise Exception("Unsupported chipset architecture")
 
 
-def start_elasticsearch():
-    cache = Path(easy.load(CONFIG)["cache"])
-    subprocess.run(str(Path(cache) / "elasticsearch-8.7.0" / "bin" / "elasticsearch"))
-
-
-def test_elasticsearch():
-    resp = requests.get("http://localhost:9200")
-    if resp.status_code == 200:
-        print("Working")
-    else:
-        print("Not working...")
-
-
 def update_elasticsearch_security():
     # https://www.reddit.com/r/elasticsearch/comments/uog64y/error_when_connecting_to_elasticsearch/
-    cache = easy.load(CONFIG)["cache"]
+    cache = easy.load(CONFIG_PATH)["cache"]
     with open(
         Path(cache) / "elasticsearch-8.7.0" / "config" / "elasticsearch.yml"
     ) as es_config_file:
@@ -82,7 +69,7 @@ def update():
     print("Enter the working directory you would like to cache data in.")
     cache = str(input(">>> "))
     if Path(cache).exists():
-        easy.save({"cache": cache}, CONFIG)
+        easy.save({"cache": cache}, CONFIG_PATH)
     else:
         print("Directory does not exist.")
 
@@ -90,7 +77,7 @@ def update():
 @cache.command()
 def view():
     check_config()
-    cache = easy.load(CONFIG)["cache"]
+    cache = easy.load(CONFIG_PATH)["cache"]
     if cache is not None:
         print(cache)
     else:
@@ -100,7 +87,7 @@ def view():
 @cache.command()
 def open():
     check_config()
-    cache = easy.load(CONFIG)["cache"]
+    cache = easy.load(CONFIG_PATH)["cache"]
     if cache is not None:
         if Path(cache).exists():
             pass  # open folder
