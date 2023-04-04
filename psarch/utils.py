@@ -1,3 +1,5 @@
+import os
+import tarfile
 import platform
 from psarch.env import SUPPORTED_DEVICES
 
@@ -22,3 +24,10 @@ def detect_device_information() -> dict[str, str]:
     architecture = platform.processor()
     device = {"system": system, "architecture": architecture}
     return device
+
+
+def unzip_tarfile(path: str) -> None:
+    with tarfile.open(path) as file:
+        file.extractall("/".join(path.split("/")[:-1]))
+    file.close()
+    os.remove(path)
