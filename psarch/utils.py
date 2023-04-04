@@ -1,10 +1,25 @@
 import os
 import tarfile
 import platform
-from psarch.env import SUPPORTED_DEVICES
+import subprocess
+import requests
+from pathlib import Path
+from pyeio import easy
+from psarch.term import vprint
+from psarch.env import SUPPORTED_DEVICES, ELASTICSEARCH_VERSION, CONFIG_PATH
 
 
 def validate_device_information(device: dict[str, str]) -> None:
+    """
+    Throws an exception if the OS and chipset architecture are not yet supported.
+
+    Args:
+        device (dict[str, str]): _description_
+
+    Raises:
+        NotImplementedError: _description_
+        NotImplementedError: _description_
+    """
     if device["system"] not in SUPPORTED_DEVICES.keys():
         raise NotImplementedError("This operating system is currently unsupported.")
     if device["architecture"] not in SUPPORTED_DEVICES[device["system"]]:
@@ -31,3 +46,19 @@ def unzip_tarfile(path: str) -> None:
         file.extractall("/".join(path.split("/")[:-1]))
     file.close()
     os.remove(path)
+
+
+def start_elasticsearch():
+    subprocess.run(
+        str(Path(CONFIG_PATH) / ELASTICSEARCH_VERSION / "bin" / "elasticsearch")
+    )
+
+
+def test_elasticsearch():
+    resp = requests.get("http://localhost:9200")
+    if resp.status_code == 200:
+        vprint("\n[green]Elasticsearch is working[/green]")
+    else:
+        vprint(
+            "\n[red]Elastic search is not working. Disabling security may fix this issue.[/red]"
+        )
