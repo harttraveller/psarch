@@ -16,24 +16,10 @@
 </div>
 
 !!! abstract "Description"
-    This python package allows you to run your own self hosted and searchable archive of reddit data.
+    This python package *was* going to allow you to run your own self hosted and searchable archive of reddit data, but alas...
 
 ![](assets/ps-meme.png)
 
 !!! warning "Data Access"
-    You will need to have archived the pushshift reddit archives before they were nuked in order to use this package. The functionality to download the data no longer works, cause the data is no longer available. If you don't have the data but would like to obtain a copy or use an alternative service, see [this](data.md) page.
-
-!!! quote "Citation"
-    If you use this package in an academic context, citation is appreciated. Also note this project is dependent on the [pushshift reddit dataset](https://arxiv.org/abs/2001.08435) for which a separate citation is recommended.
-
-```bibtex title="BibTeX"
-@online{psarch,
-  title={psarch},
-  author={Hart Traveller},
-  year={2023},
-  publisher={GitHub},
-  url={https://github.com/harttraveller/psarch},
-}
-```
-
+    If you archived pushshift reddit archives before they were nuked, you may still find this package useful. If you didn't, but you still want to use it, it is possible but not assured you meet the criteria for [data access](data_access.md).
 
