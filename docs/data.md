@@ -2,7 +2,7 @@
 
 If you do not have the data and would like get a copy, I *might* be able to provide you with a copy - or perhaps even access to a streamlined web service that replicates and greatly enhances the original functionality of pushshift, and is (maybe) still actively archiving data. However, you would have to meet all of the following criteria:
 
-1. You represent an academic institution, federal agency, or bipartisan NGO based in: US, CA, UK, AU, or NZ.
+1. You represent an academic institution or federal agency based in: US, CA, UK, AU, or NZ.
 2. You are a citizen of: US, CA, UK, AU, or NZ.
 3. You are willing to verify your identity.
 
