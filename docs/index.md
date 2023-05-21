@@ -15,6 +15,9 @@
 </a>
 </div>
 
+!!! warning "Status"
+    Package is under development, don't install quite yet. This message will be updated when it is ready to use.
+
 !!! abstract "Description"
     This python package allows you to run your own self hosted and searchable archive of reddit data. Originally it also allowed you to download the reddit archives from [files.pushshift.io](https://files.pushshift.io) but alas...
 
