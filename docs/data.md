@@ -32,4 +32,6 @@ Plus meeting the formal criteria above.
     If you already have the archives, you can just use this package. It's open source and free.
 
 ??? question "What if I represent a company?"
-    US companies or contractors with the USG that are doing research that either (A) benefits humanity or (B) pertains to national security can access the data. This determination is not made by me - it is made by an automated system.
+    US companies or contractors with the USG that are doing research that either (A) benefits humanity or (B) pertains to national security can access the data.
+
+<!-- This determination is not made by me - it is made by an automated system. -->
