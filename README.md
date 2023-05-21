@@ -1,14 +1,16 @@
 
 <div align="center">
 <img src="docs/assets/psarch.png" width=100 style="position: relative; left: -8px;">
+</div>
+<div align="center">
 <a href="https://github.com/harttraveller/psarch/blob/main/LICENSE" target="_blank">
-<img src="https://img.shields.io/badge/license-MIT-blue" height=20 style="position: relative; top: -40px;">
+<img src="https://img.shields.io/badge/license-MIT-blue" height=20 style="position: relative;">
 </a>
 <a href="https://www.python.org/downloads" target="_blank">
-<img src="https://img.shields.io/badge/python-3.10-blue" height=20 style="position: relative; top: -40px;">
+<img src="https://img.shields.io/badge/python-3.10-blue" height=20 style="position: relative;">
 </a>
 <a href="https://github.com/psf/black" target="_blank">
-<img src="https://img.shields.io/badge/code%20style-black-black" height=20 style="position: relative; top: -40px;">
+<img src="https://img.shields.io/badge/code%20style-black-black" height=20 style="position: relative;;">
 </a>
 </div>
 
