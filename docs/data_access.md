@@ -1,6 +1,6 @@
 # Data Access
 
-If you do not have the data and would like get a copy, I *might* be able to provide you with a copy - or perhaps even access to a streamlined web service that replicates and greatly enhances the original functionality of pushshift, and is (maybe) still up to date.
+If you do not have the data and would like get a copy, I *might* be able to provide you with a copy - or perhaps even access to a streamlined web service that replicates and greatly enhances the original functionality of pushshift, and is (maybe) still actively archiving data.
 
 I am interested in helping people who meet the following criteria:
 
