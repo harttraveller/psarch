@@ -16,9 +16,9 @@
 </div>
 
 !!! abstract "Description"
-    This python package *was* going to allow you to run your own self hosted and searchable archive of reddit data, but alas...
+    This python package allows you to run your own self hosted and searchable archive of reddit data. Originally it also allowed you to download the reddit archives from [files.pushshift.io](https://files.pushshift.io) but alas...
 
 ![pushshift 1984 meme](assets/ps-meme.png)
 
 !!! question "Archives"
-    If you saved pushshift reddit archives before they were nuked, you may still find this package useful. You can get started on the [setup](setup.md) page. If you didn't, but you still want to use it, check the [data access](data.md) page.
+    If you saved pushshift reddit archives before they were nuked, you may still find this package useful. You can get started on the [setup](setup.md) page. If you didn't save the archives, but you still want to use it, you can take a look at the [data access](data.md) page.
