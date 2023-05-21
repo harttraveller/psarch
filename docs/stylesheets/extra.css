@@ -6,7 +6,6 @@ body {
     --md-primary-fg-color: #111319 !important;
 }
 
-
 :root>* {
     --md-code-hl-string-color: #37d278;
     --md-code-hl-name-color: rgb(237, 154, 149);
@@ -48,6 +47,7 @@ h1 {
     color: white !important;
     font-weight: bold !important;
     margin: 0.32em 0em 0.8em 0em !important;
+    /* position: relative; */
 }
 
 h2 {
@@ -119,8 +119,10 @@ ol {
 
 
 .md-tabs__link {
-    padding: 6px 10px 6px 10px;
+    padding: 6px 8px 6px 8px;
     border: 1px solid rgba(80, 80, 255, 0.6);
+    margin-right: -12px;
+    margin-left: 4px;
     transition: 1s;
     border-radius: 6px;
     color: #6C91D5;
@@ -150,8 +152,24 @@ ol {
 
 .md-search-result__list {
     background-color: #111319 !important;
+
 }
 
+.md-header__title {
+    display: none;
+}
+
+
+.contact-submit {
+    background-color: #111319;
+    border: 1px transparent solid;
+    transition: ease 0.3s !important;
+}
+
+.contact-submit:hover {
+    border: 1px white solid;
+    color: orange;
+}
 
 img {
     border-radius: 5px;
@@ -170,19 +188,19 @@ input[aria-label="Search"] {
 
 .md-search__scrollwrap {
     background-color: #111319;
-}
 
+}
 
 .md-search__form {
     background-color: black !important;
     border-top-left-radius: 8px !important;
     border-top-right-radius: 8px !important;
+
 }
 
 .md-search__input {
     border-radius: 8px;
 }
-
 
 .md-tag {
     border-radius: 8px !important;
@@ -200,7 +218,6 @@ input[aria-label="Search"] {
     padding-bottom: 0.2rem;
 }
 
-
 .ext-link-button {
     background-color: blue !important;
     color: white;
@@ -212,15 +229,22 @@ input[aria-label="Search"] {
 }
 
 
+
+.md-search__inner {
+    left: -38px;
+    position: relative;
+}
+
 .md-header {
     padding-top: 16px;
 }
 
 
 .md-header__button.md-logo {
+    left: -36px;
     filter: brightness(0.8) !important;
+    z-index: 100000;
 }
-
 
 .md-header__button.md-logo:hover {
     opacity: 1 !important;
@@ -228,13 +252,48 @@ input[aria-label="Search"] {
     transition: 0.5s;
 }
 
-
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg {
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 1.4rem;
+    height: 1.4rem;
 }
 
-.md-header__topic {
-    color: black;
+.md-header__source {
+    position: relative;
+    margin-right: 0px !important;
+    margin-left: auto !important;
+}
+
+.md-tabs__item {
+    padding-left: 0;
+}
+
+[dir=ltr] .md-tabs__list {
+    margin-left: 0.7rem !important;
+}
+
+.submit-form-button {
+    background-color: black;
+    border: 1px solid green;
+    color: white;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s !important;
+}
+
+.submit-form-button:hover {
+    background-color: green;
+}
+
+
+.md-footer-meta__inner {
+    opacity: 0.3;
+    transition: 0.5s !important;
+}
+
+.md-footer-meta__inner:hover {
+    opacity: 1;
 }
