@@ -1,7 +1,5 @@
 # psarch
 
-Are you a researcher annoyed about the fact that the pushshift reddit archives are no longer available? We have something in common!
+This python package allows you to run your own self hosted and searchable archive of reddit data. Originally it also allowed you to download the reddit archives from [files.pushshift.io](https://files.pushshift.io) however these are no longer available.
 
-Thankfully I archived them before they disappeared... If you did too, this package provides a straightforward way to interact with and query them.
-
-I'll add more docs soon.
+If you saved pushshift reddit archives before they were nuked, you may still find this package useful. If you didn't save the archives, but you still want to use it to search the reddit archives, more information can be found on the [documentation](https://www.harttraveller.com/psarch/) website.
