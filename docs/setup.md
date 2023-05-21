@@ -6,9 +6,28 @@
 
     > Make sure you have enough storage space for the data archives. The amount of storage required will vary based on how much data you download and how far back you want to go, but I recommend a minimum of 100GB. The full uncompressed archive of comments and submissions is somewhere around ~14TB, though the exact value is uncertain.
 
-    However, the pushshift archives are down now. Accordingly this package no longer contains the functionality to download them. You will have to find them on your own, or visit the [data access](data.md) page to check you meet the requirements for the cleaned datasets/service I maintain.
+    However, the pushshift archives are down now. Accordingly this package no longer contains the functionality to download them. You will have to find them on your own. You can visit the [data access](data.md) page to check you meet the requirements for the cleaned datasets/service I maintain.
 
+!!! info "Device"
+    This package has only been tested on MacOS. If you run into a bug it may be attributable to this.
 
+!!! bug "Support"
+    If you run into a bug, please submit a GitHub Issue. I will try to address it time permitting.
+
+## Dependencies
+
+!!! info "Software: Prerequisites"
+    Recommended installation before continuing.
+
+    - [miniconda](https://docs.conda.io/en/latest/miniconda.html)
+
+??? info "Software: Automated"
+    Installed via included CLI during the setup process. You can install separately if you prefer.
+
+    - [elasticsearch](https://www.elastic.co/downloads/elasticsearch)
+
+??? info "Python Packages"
+    These are installed automatically. Package dependencies vary based on whether you install the package as a developer or a user. For the former, check the [requirements.txt]() file. For the latter, check the [setup.py]() file. The developer dependencies are a superset of the user dependencies.
 
 ## Installation
 
@@ -18,10 +37,10 @@ First, install the psarch package using pip.
 pip install psarch
 ```
 
-Set your working cache directory. This is where the raw data, as well as the elasticsearch instance will be cached. You can do this with the following CLI command. Note that due to the size of the datasets involved, it may be prudent to use an external drive.
+When you install the package, it creates a hidden folder in your home directory: `.psarch`. This is where the elasticsearch instance is stored. If you would like to change the location data is cached, you can use the CLI command.
 
 ```bash
-psarch cache update
+psarch location update
 ```
 
 Download elasticsearch. You can do this with the following command. If you have set your cache directory, elasticsearch v8.7.0 will be downloaded in the `<cache>/elasticsearch-8.7.0` directory.
