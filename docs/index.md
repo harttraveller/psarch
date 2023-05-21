@@ -18,7 +18,7 @@
 !!! abstract "Description"
     This python package *was* going to allow you to run your own self hosted and searchable archive of reddit data, but alas...
 
-![](assets/ps-meme.png)
+![pushshift 1984 meme](assets/ps-meme.png)
 
 !!! question "Archives"
     If you saved pushshift reddit archives before they were nuked, you may still find this package useful. If you didn't, but you still want to use it, check the [data access](data.md) page.
