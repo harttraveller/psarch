@@ -11,7 +11,7 @@ def post_install():
     config = package_files / "config.json"
     if not config.exists():
         with open(config, "w") as file:
-            file.write(json.dumps({"cache": None}, indent=4))
+            file.write(json.dumps({"location": None}, indent=4))
         file.close()
 
 
