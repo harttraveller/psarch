@@ -1,15 +1,23 @@
 # Quickstart
 
-!!! warning
-    Make sure you have enough storage space for the data archives. The amount of storage required will vary based on how much data you download and how far back you want to go, but I recommend a minimum of 100GB. The full uncompressed archive of comments and submissions is somewhere around ~14TB, though the exact value is uncertain.
+??? warning "Deprecated Note"
 
-### Installation
+    Originally this note read:
+
+    > Make sure you have enough storage space for the data archives. The amount of storage required will vary based on how much data you download and how far back you want to go, but I recommend a minimum of 100GB. The full uncompressed archive of comments and submissions is somewhere around ~14TB, though the exact value is uncertain.
+
+    However, the pushshift archives are down now. Accordingly this package no longer contains the functionality to download them. You will have to find them on your own, or visit the [data access](data_access.md) page to check you meet the requirements for the cleaned datasets/service I maintain.
+
+
+## Installation
 
 First, install the psarch package using pip.
 
 ```bash
 pip install psarch
 ```
+
+
 
 ### Setup
 
