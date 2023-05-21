@@ -2,7 +2,7 @@
 
 If you do not have the data and would like get a copy, I *might* be able to provide you with a copy - or perhaps even access to a streamlined web service that replicates and greatly enhances the original functionality of pushshift, and is (maybe) still actively archiving data. However, you would have to meet all of the following criteria:
 
-1. You represent an academic institution, federal agency, or non-political NGO based in: US, CA, UK, AU, or NZ.
+1. You represent an academic institution, federal agency, or bipartisan NGO based in: US, CA, UK, AU, or NZ.
 2. You are a citizen of: US, CA, UK, AU, or NZ.
 3. You are willing to verify your identity.
 
@@ -31,5 +31,5 @@ Plus meeting the formal criteria above.
 ??? question "What if I already have the data archives?"
     If you already have the archives, you can just use this package. It's open source and free.
 
-??? question "Are corporations approved?"
-    Corporations that are doing academic research for the benefit of humanity based in the US, or contractors with the USG are the exceptions here.
+??? question "What if I represent a company?"
+    US companies or contractors with the USG that are doing research that either (A) benefits humanity or (B) pertains to national security can access the data. This determination is not made by me - it is made by an automated system.

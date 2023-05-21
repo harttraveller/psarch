@@ -46,7 +46,7 @@ markdown_extensions:
 
 nav:
 - About: "index.md"
-- Quickstart: "quickstart.md"
+- Setup: "setup.md"
 # - Usage: "usage.md"
 # - Features: "features.md"
 # - Normalization: "normalization.md"
