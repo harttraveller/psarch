@@ -21,5 +21,5 @@
 ![](assets/ps-meme.png)
 
 !!! warning "Data Access"
-    If you archived pushshift reddit archives before they were nuked, you may still find this package useful. If you didn't, but you still want to use it, it is possible but not assured you meet the criteria for [data access](data_access.md).
+    If you saved pushshift reddit archives before they were nuked, you may still find this package useful. If you didn't, but you still want to use it, it is possible but not assured you meet the criteria for [data access](data_access.md).
 
