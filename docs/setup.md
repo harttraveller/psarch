@@ -27,7 +27,7 @@
     - [elasticsearch](https://www.elastic.co/downloads/elasticsearch)
 
 ??? info "Python Packages"
-    These are installed automatically. Package dependencies vary based on whether you install the package as a developer or a user. For the former, check the [requirements.txt]() file. For the latter, check the [setup.py]() file. The developer dependencies are a superset of the user dependencies.
+    These are installed automatically. Package dependencies vary based on whether you install the package as a developer or a user. For the former, check the [requirements.txt](https://github.com/harttraveller/psarch/blob/main/requirements.txt) file. For the latter, check the [setup.py](https://github.com/harttraveller/psarch/blob/main/setup.py) file. The developer dependencies are a superset of the user dependencies.
 
 ## Installation
 
@@ -45,10 +45,10 @@ psarch location update
 
 Download elasticsearch. You can do this with the following command. If you have set your cache directory, elasticsearch v8.7.0 will be downloaded in the `<cache>/elasticsearch-8.7.0` directory.
 
-??? Note "Using Docker"
+??? note "Using Docker"
     You can also use docker to set up elasticsearch, as documented [here](https://dylancastillo.co/elasticsearch-python/). The caveat with this is that (as I understand) the docker container will operate in memory while active, and thus the amount of data you can handle will be restricted to a fraction of the RAM available on your system.
 
-??? Note "Supported Systems"
+??? note "Supported Systems"
     At the moment I've only implemented the download wizard for elasticsearch for MacOS. If you are on a different system, you can download it manually [here](https://www.elastic.co/downloads/elasticsearch) and move the unpacked folder into your cache directory. There may still be issues, but if you submit them on GitHub I will try to address them when I have time.
 
 ```bash
