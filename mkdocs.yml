@@ -16,11 +16,11 @@ theme:
     primary: black
     accent: orange
   features:
-    - header.autohide
-    - navigation.instant
-    - navigation.tracking
-    - content.code.copy
-    - navigation.footer
+  - header.autohide
+  - navigation.instant
+  - navigation.tracking
+  - content.code.copy
+  - navigation.footer
 
 extra:
   generator: false
@@ -46,7 +46,7 @@ markdown_extensions:
 
 nav:
 - About: "index.md"
-- Setup: "setup.md"
-- Usage: "usage.md"
-- Features: "features.md"
-- Normalization: "normalization.md"
+- Quickstart: "quickstart.md"
+# - Usage: "usage.md"
+# - Features: "features.md"
+# - Normalization: "normalization.md"

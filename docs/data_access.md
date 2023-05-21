@@ -5,7 +5,7 @@ If you do not have the data and would like get a copy, I *might* be able to prov
 I am interested in helping people who meet the following criteria:
 
 1. You represent an academic institution or government agency.
-2. You are a citizen (or the entity you are a subset of is based in) either: US, CA, UK, AU, NZ.
+2. You are a citizen of and the entity you are a subset of is based in either: US, CA, UK, AU, NZ.
 3. You are willing to verify your identity.
 
 If you are an individual - apologies but no.
