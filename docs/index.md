@@ -21,7 +21,4 @@
 ![pushshift 1984 meme](assets/ps-meme.png)
 
 !!! question "Archives"
-    If you saved pushshift reddit archives before they were nuked, you may still find this package useful. If you didn't, but you still want to use it, check the [data access](data.md) page.
-
-!!! bug "Support"
-    This package has only been tested on MacOS. If you run into a problem, please submit a GitHub Issue. I will try to address it time permitting.
+    If you saved pushshift reddit archives before they were nuked, you may still find this package useful. You can get started on the [setup](setup.md) page. If you didn't, but you still want to use it, check the [data access](data.md) page.
