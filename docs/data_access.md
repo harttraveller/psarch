@@ -12,7 +12,18 @@ If you are an individual - apologies but no.
 
 `Please check back later for a link to an application form.`
 
-??? note "Corporation Approval"
+??? question "What if I already have the data archives?"
+    If you already have the archives, you can just use this package. It's open source and free. My reasoning for not distributing the data publicly primarily pertains to my concern for potential abuse by bad actors. With that said, it's still incredibly valuable for good actors, so I think Reddit definitely could have handled this a lot better.
+
+    ??? note "Good Actors vs. Bad Actors"
+        Of course, on a deeper philosophical level, there are no good or bad actors. There are only competing interests and the driving force of evolution and natural selection. Is a tapeworm bad? If you are a human, yes. If you are a tapeworm, no - then humans are bad. This aside, I happen to be a human, and thus I have to have some personal standards. I could write several pages about this, but I'll put that somewhere else. Suffice to say the heuristic you can use for whether I'll provide access is:
+
+        - You want access because you want to do something to help humanity -> Access granted
+        - You want access because you want something to help yourself -> Access denied
+
+        Plus meeting the formal criteria above.
+
+??? question "Are corporations approved?"
     Corporations that are doing academic research for the benefit of humanity based in the US, or contractors with the USG are the exceptions here.
 
 ??? question "Why block individuals?"
